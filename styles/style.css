@@ -1,0 +1,34 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+  border: none;
+  outline: none;  
+  background: none;
+}
+
+.wrapper,
+.modal-dialog {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myModal-content {
+    width: 305px;
+    height: 23vh;
+}
+
+.myModal_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
