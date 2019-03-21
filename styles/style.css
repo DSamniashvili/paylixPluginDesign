@@ -35,10 +35,11 @@ textarea {
 .myBtn-default {
     border: none;
     background-color: #f0f0f0;
+    color: #37343a;
     
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
 
 
     padding: 0;
