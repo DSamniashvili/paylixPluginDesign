@@ -23,12 +23,27 @@ textarea {
 }
 
 .myModal-content {
-    width: 305px;
-    height: 23vh;
+    width: 420px;
+    height: 231px;
 }
 
 .myModal_header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+.myBtn-default {
+    border: none;
+    background-color: #f0f0f0;
+    
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+
+
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    font-size: 9px;
+    font-weight: 400;
 }
