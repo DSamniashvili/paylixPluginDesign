@@ -1,0 +1,58 @@
+.check-wrapper {
+    width: 430px;
+    height: 430px;
+}
+.check-first {
+    width: 100%;
+    height: 46%;
+    background-color: #6c44f5;
+
+    position: relative;
+}
+.check-second {
+    width: 100%;
+    height: 54%;
+    background-color: #fff;
+}
+.check-header {
+    width: 90%;
+    height: 27%;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 10px;
+
+}
+
+.check-header-left-image {
+    height: 100%;
+    width: 20%;
+}
+.check-header-left-image > img {
+    width: 100%;
+    height: auto;
+}
+.check-header-right-button {
+    height: 100%;
+    width: 20%;
+}
+
+.check-btn {
+    border: none;
+    background-color: #f0f0f0;
+    color: #37343a;
+    
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+
+
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    font-size: 9px;
+    font-weight: 400;
+
+    position: absolute;
+    right: 0;
+}
