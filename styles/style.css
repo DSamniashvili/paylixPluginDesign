@@ -3,19 +3,26 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit; 
+  font-size: 100%; 
+  line-height: 1.15; 
+  margin: 0; 
   border: none;
   outline: none;  
   background: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
 .wrapper,
 .modal-dialog {
     width: 100%;
     height: 100vh;
+    
 
     display: flex;
     justify-content: center;
@@ -27,11 +34,6 @@ textarea {
     height: 231px;
 }
 
-.myModal_header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
 .myBtn-default {
     border: none;
     background-color: #f0f0f0;
@@ -47,4 +49,147 @@ textarea {
     line-height: 0;
     font-size: 9px;
     font-weight: 400;
+
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
+.myModal-body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.myModal_header {
+    height: 17%;
+    width: 100%;
+}
+
+.myModal-main {
+    width: 84%;
+    height: 41%;
+    margin: 0 auto;
+}
+
+.myModal-footer {
+    width: 84%;
+    margin: 0 auto;
+    height: 42%;
+}
+
+.myModal-main-first,
+.myModal-main-second {
+    width: 100%;
+    height: 50%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+.myModal-main-first-image {
+   height: 100%;
+}
+.myModal-main-first-image > img {
+    width: auto;
+    height: 100%;
+    padding-bottom: 15px;
+}
+
+.myModal-main-first-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.myModal-main-first-text > h3 {
+    color: #373439;
+    font-family: 'Semibold';
+    font-size: 1.1rem;
+}
+
+.myModal-main-first-text > p {
+    color: #9c9c9e;
+    font-family: 'Regular';
+    font-size: 0.8rem;
+    padding: 3px 0;
+}
+
+.myModal-main-second {
+    color: #b1b1b5;
+}
+.myModal-main-second-wrapLeft,
+.myModal-main-second-num2 {
+    height: 100%;
+}
+.myModal-main-second-wrapLeft {
+    height: 100%;
+    widows: 30%;
+}
+.myModal-main-second-num2 > input {
+    border-bottom: 2px solid #e9e9e9;
+    height: 100%;
+}
+
+.myModal-main-second-num2 {
+    width: 65%;
+}
+.myModal-main-second-num2 > input {
+    font-size: 0.9rem;
+}
+
+.myModal-main-second-flag > img {
+    width: 25px;
+    height: auto;
+}
+
+.myModal-main-second-arrowDown {
+    padding-right: 8px;
+}
+
+.myModal-main-second-arrowRight {
+    width: 35px;
+    height: 28px;
+    border-radius: 15px;
+    padding-right: 8px;
+    background-color: #e4e3e6;
+}
+.myModal-main-second-arrowRight:hover,
+.myModal-main-second-arrowRight:active {
+    background-color: #6c44f5;
+}
+
+.myModal-main-second-num1 {
+    padding-left: 8px;
+}
+.myModal-main-second-num1 > p {
+    color: #4c4752;
+}
+
+.myModal-main-second-arrowRight > img {
+    height: 16px;
+    width: auto;
+    top: 5px;
+    left: 10px;
+}
+
+.myModal-main-second-num2 > input {
+    color: #4c4752;
+}
+
+.myModal-footer-logo-wrapper {
+    display: flex;
+}
+.myModal-footer-questions_wrapper {
+    color: #5badfc;
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+.myModal-footer-PaylixLogo {
+    width: 30%;
+}
+
+.myModal-footer-PaylixLogo > img {
+    width: 100%;
+    height: auto;
+    background-color: red;
+}
+

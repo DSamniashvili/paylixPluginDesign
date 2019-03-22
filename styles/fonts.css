@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Regular';
+    font-size: 14pt;
+    src: url('../Fonts/gilroy-regular.otf');
+}
+
+@font-face {
+    font-family: 'Bold';
+    font-size: 14pt;
+    src: url('../fonts/gilroy-bold.otf');
+}
+
+@font-face {
+    font-family: 'Semibold';
+    font-size: 14pt;
+    src: url('../Fonts/gilroy-semibold.otf');
+}
