@@ -4,108 +4,214 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
-        integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+    integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/index.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col text-center">
-                    <a href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#MainModal">Paylix</a>
-                </div>
-            </div>
+  <div class="wrapper">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col text-center">
+          <a href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#MainModal">Paylix</a>
         </div>
-
-        <div class="modal fade" id="MainModal" tabindex="-1" role="dialog" aria-labelledby="MainModal"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content myModal-content">
-                    <!-- <div class="modal-body myModal-body">
-                                <header class="myModal_header d-flex flex-row justify-content-center align-items-center">
-                                  <button type="button" class="btn btn-default myBtn-default" data-dismiss="modal">
-                                    <i class="fas fa-times"></i>
-                                  </button>
-                                </header>
-
-                                <main class="myModal-main d-flex flex-column">
-                                  <div class="d-flex flex-row myModal-main-first justify-content-start align-items-start">
-                                    <div class="myModal-main-first-image">
-                                      <img src="./Paylix Plugin Design/Assets/group-12.png" alt="phone icon"/>
-                                    </div>
-                                    <div class="myModal-main-first-text">
-                                      <h3>Secure & Quick Checkout</h3>
-                                      <p>Pay with your credit card using your smartphone.</p>
-                                    </div>
-                                  </div>
-                                  <div class="myModal-main-second d-flex flex-row justify-content-between align-items-center">
-                                    <div class="myModal-main-second-wrapLeft d-flex flex-row justify-content-center align-items-center">
-                                        <div class="myModal-main-second-arrowDown"><i class="fas fa-angle-down"></i></div>
-                                        <div class="myModal-main-second-flag">
-                                          <img src="./Paylix Plugin Design/Assets/flag.png" alt="flag"/>
-                                        </div>
-                                        <div class="myModal-main-second-num1"><p>+972</p></div>
-                                    </div>
-
-                                    <form action="#" name="form" class="d-flex align-items-center justify-content-between myModal-main-second-num2">
-                                      <input type="number" name="number" placeholder="Your phone Number" class="myModal-main-second-num2-input"><br>
-                                      <button type="submit" value="Submit" class="myModal-main-second-arrowRight d-flex justify-content-center aling-items-center position-relative">
-                                          <img src="./Paylix Plugin Design/Assets/pathCopy.png" alt="arrow right" class="position-absolute"/>
-                                      </button>
-                                    </form>
-                                  </div>
-                                </main> 
-
-                                <footer class="myModal-footer d-flex flex-row justify-content-between align-items-center">
-                                    <div class="myModal-footer-PaylixLogo">
-                                        <img src="./Paylix Plugin Design//Assets/logo.png" alt="Paylix Logo"/>
-                                    </div>
-                                  
-                                  <div class="myModal-footer-questions_wrapper d-flex justify-content-between align-items-center">
-                                    <button class="footer-question1">Need Help?</button>
-                                    <button class="footer_question2">Terms & Polices</button>
-                                  </div>
-                                </footer>
-                            </div> -->
-
-                    <div class="modal-body myModal-body">
-                        <div class="check-wrapper d-flex flex-column justify-content-center align-items-center">
-                            <div class="d-flex flex-row justify-content-center align-items-center check-first">
-                                <header class="check-header d-flex flex-row justify-content-between align-items-center">
-                                    <div class="check-header-left-image">
-                                        <img src="./Paylix Plugin Design/Assets/logo.png" alt="logo" />
-                                    </div>
-                                    <div class="check-header-right-button">
-                                        <button type="button" class="btn btn-default check-btn"
-                                            data-dismiss="modal">
-                                            <i class="fas fa-times"></i>
-                                        </button>
-                                    </div>
-                                </header>
-                            </div>
-                            <div class="d-flex flex-row justify-content-center align-items-center check-second"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
+    <div class="modal fade" id="MainModal" tabindex="-1" role="dialog" aria-labelledby="MainModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content myModal-content">
+          <div class="modal-body myModal-body">
+            <!-- first start -->
+            <div class="first-page  shown">
+              <header class="myModal_header d-flex flex-row justify-content-center align-items-center">
+                <button type="button" class="btn btn-default myBtn-default" data-dismiss="modal">
+                  <i class="fas fa-times"></i>
+                </button>
+              </header>
 
-    <script src="/src/script.js"></script>
+              <main class="myModal-main d-flex flex-column">
+                <div class="d-flex flex-row myModal-main-first justify-content-start align-items-start">
+                  <div class="myModal-main-first-image">
+                    <img src="./Paylix Plugin Design/Assets/group-12.png" alt="phone icon" />
+                  </div>
+                  <div class="myModal-main-first-text">
+                    <h3>Secure & Quick Checkout</h3>
+                    <p>Pay with your credit card using your smartphone.</p>
+                  </div>
+                </div>
+                <div class="myModal-main-second d-flex flex-row justify-content-between align-items-center">
+                  <div class="myModal-main-second-wrapLeft d-flex flex-row justify-content-center align-items-center">
+                    <div class="myModal-main-second-arrowDown"><i class="fas fa-angle-down"></i></div>
+                    <div class="myModal-main-second-flag">
+                      <img src="./Paylix Plugin Design/Assets/flag.png" alt="flag" />
+                    </div>
+                    <div class="myModal-main-second-num1">
+                      <p>+972</p>
+                    </div>
+                  </div>
+
+                  <form action="#" name="form"
+                    class="d-flex align-items-center justify-content-between myModal-main-second-num2">
+                    <input type="number" name="number" placeholder="Your phone Number"
+                      class="myModal-main-second-num2-input"><br>
+                    <button type="submit" value="Submit"
+                      class="myModal-main-second-arrowRight d-flex justify-content-center aling-items-center position-relative"
+                      onclick="addClassFunc()">
+                      <img src="./Paylix Plugin Design/Assets/pathCopy.png" alt="arrow right"
+                        class="position-absolute" />
+                    </button>
+                  </form>
+                </div>
+              </main>
+
+              <footer class="myModal-footer d-flex flex-row justify-content-between align-items-center">
+                <div class="myModal-footer-PaylixLogo">
+                  <img src="./Paylix Plugin Design//Assets/logo.png" alt="Paylix Logo" />
+                </div>
+
+                <div class="myModal-footer-questions_wrapper d-flex justify-content-between align-items-center">
+                  <button class="footer-question1">Need Help?</button>
+                  <button class="footer_question2">Terms & Polices</button>
+                </div>
+              </footer>
+            </div>
+
+
+            <!-- Second -->
+            <div class="check-wrapper hidden d-flex flex-column justify-content-center align-items-center">
+              <div class="d-flex flex-row justify-content-center align-items-center check-first">
+                <header class="check-header d-flex flex-row justify-content-between align-items-center">
+                  <div class="check-header-left-image">
+                    <img src="./Paylix Plugin Design/Assets/logo.png" alt="logo" />
+                  </div>
+                  <div class="check-header-right-button">
+                    <button type="button" class="btn btn-default check-btn" data-dismiss="modal">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </header>
+                <img src="./Paylix Plugin Design//Assets/group-3.png" alt="image" />
+              </div>
+              <div class="d-flex check-second">
+                <div class="d-flex flex-column align-items-center check-second-wrapper">
+                  <button class="check-second-checkmark" onclick="goToCart()">
+                    <img src="./Paylix Plugin Design//Assets/yes-copy.png" alt="checkmark" />
+                  </button>
+                  <h1>Check your smartphone</h1>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout.</p>
+                  <div class="check-second-time">
+                    <h2>02:59</h2>
+                  </div>
+                  <div class=" d-flex flex-row justify-content-between check-second-time-buttons">
+                    <button onClick="changeClass()">Send Again</button>
+                    <button>Cancel Request</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Finished Second -->
+
+            <!-- third -->
+
+            <div class="nice-to-meet hidden d-flex flex-column justify-content-center align-items-center">
+              <img src="./Paylix Plugin Design//Assets/bitmap-copy.png" />
+              <div class="nice-to-meet-container d-flex flex-column">
+                <header class="nice-to-meet-header d-flex flex-row justify-content-between align-items-center">
+                  <!-- <div class="check-header-right-button-1"> -->
+                  <button type="button" class="btn btn-default check-btn" data-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <!-- </ div> -->
+                </header>
+                <main class="nice-to-meet-main">
+                  <h1>Hi, Nice to Meet you!</h1>
+                  <p class="first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the
+                    industry's standard dummy text ever since the 1500s. </p>
+                  <p class="second"> when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. </p>
+                </main>
+                <footer class="nice-to-meet-footer">
+                  <div class="nice-header-left-image">
+                    <img src="./Paylix Plugin Design/Assets/logo.png" alt="logo" />
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <!-- finished third -->
+
+            <!-- Fourth -->
+            <div class="cart-wrapper cart-wrapper-approved hidden d-flex justify-content-center align-items-center">
+              <div class="cart-container d-flex flex-column">
+                <header class="cart-header d-flex flex-row justify-content-between align-items-center">
+                  <button type="button" class="btn btn-default check-btn" data-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </header>
+                <main class="d-flex flex-column justify-content-center align-items-center cart-content">
+                  <div class="cartImage">
+                    <img src="./Paylix Plugin Design/Assets/group-4-copy.png" alt="approved cart" />
+                  </div>
+                  <h1>Congratulations!</h1>
+                  <p>Purchase Successfully done!</p>
+                  <button class="cart-button" onClick="showDeclined()">
+                    <span>Invite your friends to join Paylix</span>
+                  </button>
+
+                </main>
+              </div>
+            </div>
+      <!-- fourth finished -->
+
+      <!-- fifth -->
+
+      <div class="cart-wrapper cart-wrapper-declined d-flex justify-content-center align-items-center hidden">
+          <div class="cart-container d-flex flex-column">
+            <header class="cart-header d-flex flex-row justify-content-between align-items-center">
+              <button type="button" class="btn btn-default check-btn" data-dismiss="modal">
+                <i class="fas fa-times"></i>
+              </button>
+            </header>
+            <main class="d-flex flex-column justify-content-center align-items-center cart-content cart-content-declined">
+              <div class="cartImage">
+                <img src="./Paylix Plugin Design/Assets/group-3-copy-3.png" alt="declined cart" />
+              </div>
+              <h1>Sorry, Payment Failed</h1>
+              <p>Payment declined due to: Insufficient Funds</p>
+            </main>
+          </div>
+        </div>
+    <!-- finished fifth -->
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/src/script.js">
+  </script>
 </body>
 
 </html>

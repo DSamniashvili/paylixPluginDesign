@@ -1,6 +1,12 @@
+.hidden {
+    display: none;
+}
+.shown {
+    display: block;
+}
 .check-wrapper {
-    width: 430px;
-    height: 430px;
+    width: 100%;
+    height: 100%;
 }
 .check-first {
     width: 100%;
@@ -16,7 +22,8 @@
 }
 .check-header {
     width: 90%;
-    height: 27%;
+    /* height: 27%; */
+    height: 20px;
     margin: 0 auto;
 
     position: absolute;
@@ -27,6 +34,7 @@
 .check-header-left-image {
     height: 100%;
     width: 20%;
+    margin-top: 10px;
 }
 .check-header-left-image > img {
     width: 100%;
@@ -39,7 +47,7 @@
 
 .check-btn {
     border: none;
-    background-color: #f0f0f0;
+    background-color: rgba(240,240,240, .5);
     color: #37343a;
     
     width: 20px;
@@ -55,4 +63,65 @@
 
     position: absolute;
     right: 0;
+}
+
+.check-first > img {
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    /* left: 0; */
+}
+.check-second {
+    padding: 0 5%;
+    position: relative;
+}
+.check-second-wrapper {
+    width: 88%;
+    margin: 0 auto;
+    height: 100%;
+}
+.check-second-checkmark {
+    position: absolute;
+    top: -10px;
+}
+.check-second-wrapper > h1 {
+    font-family: 'Semibold';
+    font-size: 1.3rem;
+    padding-top: 5vh;
+}
+
+.check-second-wrapper > p {
+    color: #9c9c9e;
+    font-family: 'Regular';
+    font-size: 0.8rem;
+    padding: 3% 0;
+    text-align: center;
+}
+.check-second-time {
+    padding: 3% 0;
+}
+.check-second-time > h2 {
+    font-family: 'Semibold';
+    font-size: 1.4rem;
+    color: #3f3748;
+}
+.check-second-time-buttons {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    bottom: 10%;
+    padding: 0 5%;
+}
+.check-second-time-buttons > button {
+    color: #3e9ffc;
+    border-bottom: 1px solid #3e9ffc;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .check-second-wrapper > h1 {
+        padding-top: 20%;
+    }
 }
