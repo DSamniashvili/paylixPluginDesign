@@ -1,29 +1,18 @@
-// let myInput = document.querySelector('.myModal-main-second-num2-input');
-// // console.log(myInput);
+let w = window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
 
-// // function checkIfNotEmpty(e) {
-// //     e.preventDefault();
-// //     if(myInput.length > 0) {
-// //         console.log(myInput);
-// //     }
-// // }
+var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
-// const form = document.querySelector('form')
-// form.addEventListener('submit', evt => {
-//   evt.preventDefault()
+let h = window.innerHeight ||
+  document.documentElement.clientHeight ||
+  document.body.clientHeight;
 
-// })
 
-// const value = input.value.trim();
-// input.addEventListener('input', evt => {
-//   const value = input.value.trim()
-//   if (value) {
-//     input.dataset.state = 'valid'
-//     myInput.classList.add('purple')
-//   } else {
-//     input.dataset.state = 'invalid'
-//   }
-// })
+window.addEventListener('load', function () {
+  changeOnMobile()
+}, false);
+
 
 function addClassFunc() {
   let checkWrapper = document.querySelector('.check-wrapper');
@@ -37,7 +26,7 @@ function addClassFunc() {
   firstPage.classList.remove('shown');
   myModalContent.classList.add('myModal-big-content');
 
-  
+
 }
 
 
@@ -55,7 +44,7 @@ function changeClass() {
 function goToCart() {
   let checkWrapper = document.querySelector('.check-wrapper');
   let cartWrapper = document.querySelector('.cart-wrapper-approved');
-  
+
   checkWrapper.classList.add('hidden');
   checkWrapper.classList.remove('shown');
 
@@ -73,3 +62,23 @@ function showDeclined() {
   declinedWreapper.classList.add('shown');
   declinedWreapper.classList.remove('hidden');
 }
+
+function changeOnMobile() {
+  let mobileV = document.querySelector('.desktop');
+  if (viewportWidth > 768) {
+    mobileV.classList.add('desktop');
+    mobileV.classList.add('hidden-xs');
+    mobileV.classList.remove('mobile');
+    mobileV.classList.remove('visible-xs');
+  } else {
+    console.log('Small viewport');
+    mobileV.classList.add('mobile');
+    mobileV.classList.add('visible-xs');
+    mobileV.classList.remove('desktop');
+    mobileV.classList.remove('hidden-xs');
+
+    mobileV.classList.add('myModal-mobile-content');
+    mobileV.classList.remove('myModal-content');
+  }
+
+};

@@ -73,6 +73,9 @@ input[type=number]::-webkit-outer-spin-button {
 .myModal-body {
     width: 100%;
     padding: 0;
+
+    position: absolute;
+    height: 100%;
 }
 
 .myModal_header {
@@ -202,8 +205,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .myModal-footer-PaylixLogo > img {
-    width: 100%;
+    width: 80%;
     height: auto;
-    background-color: red;
 }
-
+.colorful-btn {
+    background-color: rgba(240,240,240, .3);
+}
+.colorful-btn > i {
+    color: #b5a5f7;
+}
