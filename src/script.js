@@ -24,7 +24,9 @@ function addClassFunc() {
 
   firstPage.classList.add('hidden');
   firstPage.classList.remove('shown');
-  myModalContent.classList.add('myModal-big-content');
+  if(viewportWidth > 767.98) {
+    myModalContent.classList.add('myModal-big-content');
+  }
 
 
 }
@@ -65,7 +67,7 @@ function showDeclined() {
 
 function changeOnMobile() {
   let mobileV = document.querySelector('.desktop');
-  if (viewportWidth > 768) {
+  if (viewportWidth > 767.98) {
     mobileV.classList.add('desktop');
     mobileV.classList.add('hidden-xs');
     mobileV.classList.remove('mobile');

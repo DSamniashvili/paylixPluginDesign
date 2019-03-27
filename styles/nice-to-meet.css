@@ -3,12 +3,20 @@
     height: 100%;
     background-color: #6c44f5;
     position: relative;
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .nice-to-meet-container {
-    width: 94%;
+    /* width: 94%; */
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     position: relative;
+}
+
+.check-second {
+    background-color: #fff;
 }
 
 .nice-to-meet > img {
@@ -27,19 +35,26 @@
     margin: 0 auto;
     margin-top: 10px;
 }
-.nice-to-meet-main {
+.nice-to-meet-main,
+.nice-to-meet-main-mobile {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-
+    padding: 0 3%;
+}
+.nice-to-meet-main-mobile {
+    padding: 25px 2%;
+    text-align: center;
 }
 
-.nice-to-meet-main > h1 {
+.nice-to-meet-main > h1,
+.nice-to-meet-main-mobile > h1 {
     font-family: 'Regular';
     font-size: 1.3rem;
     margin-bottom: 5%;
 }
 
-.nice-to-meet-main > p {
+.nice-to-meet-main > p
+.nice-to-meet-main-mobile > p {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
     line-height: 1.4rem;
@@ -59,5 +74,5 @@
     width: 100%;
 }
 .nice-header-left-image > img {
-    height: 2.5vh;
+    height: 3vh;
 }

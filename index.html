@@ -34,8 +34,12 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content myModal-content desktop hidden-xs">
           <div class="modal-body myModal-body">
+            <div class="stick d-flex justify-content-center align-items-center" data-dismiss="modal">
+              <button type="button" class="btn btn-default stick" data-dismiss="modal">
+              </button>
+            </div>
             <!-- first start -->
-            <div class="first-page  shown">
+            <div class="first-page shown d-flex flex-column justify-content-center align-items-center">
               <header class="myModal_header d-flex flex-row justify-content-center align-items-center">
                 <button type="button" class="btn btn-default myBtn-default" data-dismiss="modal">
                   <i class="fas fa-times"></i>
@@ -66,7 +70,7 @@
                   <form action="#" name="form"
                     class="d-flex align-items-center justify-content-between myModal-main-second-num2">
                     <input type="number" name="number" placeholder="Your phone Number"
-                      class="myModal-main-second-num2-input" ><br>
+                      class="myModal-main-second-num2-input"><br>
                     <button type="submit" value="Submit"
                       class="myModal-main-second-arrowRight d-flex justify-content-center aling-items-center position-relative"
                       onclick="addClassFunc()">
@@ -76,11 +80,19 @@
                   </form>
                 </div>
               </main>
+              <button class="visible-xs mobile-btn d-flex justify-content-center align-items-center"
+                onClick="addClassFunc()">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+
 
               <footer class="myModal-footer d-flex flex-row justify-content-between align-items-center">
                 <div class="myModal-footer-PaylixLogo">
                   <img src="./Paylix Plugin Design//Assets/group-2-grey.png" alt="Paylix Logo" />
                 </div>
+
+
+                <div class="visible-xs touch-pay-done"><span>Touch. Pay. Done.</span></div>
 
                 <div class="d-flex justify-content-between align-items-center myModal-footer-questions_wrapper">
                   <button class="footer-question1"><u>Need Help?</u></button>
@@ -92,7 +104,7 @@
 
             <!-- Second -->
             <div class="check-wrapper hidden d-flex flex-column justify-content-center align-items-center ">
-              <div class="d-flex flex-row justify-content-center align-items-center check-first">
+              <div class="hidden-xs d-flex flex-row justify-content-center align-items-center check-first">
                 <header class="check-header d-flex flex-row justify-content-between align-items-center">
                   <div class="check-header-left-image">
                     <img src="./Paylix Plugin Design/Assets/logo.png" alt="logo" />
@@ -105,16 +117,26 @@
                 </header>
                 <img src="./Paylix Plugin Design//Assets/group-3.png" alt="image" />
               </div>
-              <div class="d-flex check-second">
-                <div class="d-flex flex-column align-items-center check-second-wrapper">
-                  <button class="check-second-checkmark" onclick="goToCart()">
+              <div class="d-flex flex-column justify-content-center align-items-center check-second">
+
+                <div
+                  class="mobile-header-wrappe visible-xs myModal-footer d-flex jlex-row justify-content-between align-items-center">
+                  <div class="myModal-footer-PaylixLogo">
+                    <img src="./Paylix Plugin Design//Assets/group-2-grey.png" alt="Paylix Logo" />
+                  </div>
+                  <div class="check-second-time">
+                    <h2>02:59</h2>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center  check-second-wrapper">
+                  <button class="check-second-checkmark hidden-xs" onclick="goToCart()">
                     <img src="./Paylix Plugin Design//Assets/yes-copy.png" alt="checkmark" />
                   </button>
-                  <h1>Check your smartphone</h1>
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout.</p>
-                  <div class="check-second-time">
+                  <h1 class="hidden-xs">Check your smartphone</h1>
+                  <p class="successfully-sent visible-xs">Payment request successfully sent to: +972 54280008.</p>
+                  <p>For data security purposes this session will stay active for three minutes only.</p>
+                  <div class="check-second-time hidden-xs">
                     <h2>02:59</h2>
                   </div>
                   <div class=" d-flex flex-row justify-content-between check-second-time-buttons">
@@ -131,7 +153,8 @@
             <div class="nice-to-meet hidden d-flex flex-column justify-content-center align-items-center ">
               <img src="./Paylix Plugin Design//Assets/bitmap-copy.png" />
               <div class="nice-to-meet-container d-flex flex-column">
-                <header class="nice-to-meet-header d-flex flex-row justify-content-between align-items-center">
+                <header
+                  class="nice-to-meet-header d-flex flex-row justify-content-between align-items-center hidden-xs">
                   <!-- <div class="check-header-right-button-1"> -->
                   <button type="button" class="btn btn-default check-btn colorful-btn" data-dismiss="modal">
                     <i class="fas fa-times"></i>
@@ -139,18 +162,30 @@
                   <!-- </ div> -->
                 </header>
                 <main class="nice-to-meet-main">
-                  <h1>Hi, Nice to Meet you!</h1>
-                  <p class="first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the
-                    industry's standard dummy text ever since the 1500s. </p>
-                  <p class="second"> when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. </p>
+                  <div class="nice-to-meet-main-mobile d-flex flex-column justify-content-center align-items-center visible-xs">
+                    <h1>Hi, Nice to Meet you!</h1>
+                    <p class="first hidden-xs">Lorem Ipsum is simply dummy text of the printing and typesetting
+                      industry.
+                      Lorem
+                      Ipsum has been the
+                      industry's standard dummy text ever since the 1500s. </p>
+                    <p class="second hidden-xs"> when an unknown printer took a galley of type and
+                      scrambled it to make a type specimen book. </p>
+                    <p class="visible-xs">Lorem Ipsum is simply dummy text of the printing and typesetting
+                      industry.
+                      Lorem
+                      Ipsum has been the
+                      industry's standard dummy text ever since the 1500s. </p>
+                  </div>
                 </main>
                 <footer class="nice-to-meet-footer">
                   <div class="nice-header-left-image">
                     <img src="./Paylix Plugin Design/Assets/logo.png" alt="logo" />
                   </div>
                 </footer>
+                <div class="visible-xs mobile-bottom-grey d-flex justify-content-center align-items-center">
+                  <img src="./Paylix Plugin Design/Assets/app-store.png" alt="app store">
+                </div>
               </div>
             </div>
             <!-- finished third -->
@@ -176,27 +211,28 @@
                 </main>
               </div>
             </div>
-      <!-- fourth finished -->
+            <!-- fourth finished -->
 
-      <!-- fifth -->
+            <!-- fifth -->
 
-      <div class="cart-wrapper cart-wrapper-declined d-flex justify-content-center align-items-center hidden ">
-          <div class="cart-container d-flex flex-column">
-            <header class="cart-header d-flex flex-row justify-content-between align-items-center">
-              <button type="button" class="btn btn-default check-btn" data-dismiss="modal">
-                <i class="fas fa-times"></i>
-              </button>
-            </header>
-            <main class="d-flex flex-column justify-content-center align-items-center cart-content cart-content-declined">
-              <div class="cartImage">
-                <img src="./Paylix Plugin Design/Assets/group-3-copy-3.png" alt="declined cart" />
+            <div class="cart-wrapper cart-wrapper-declined d-flex justify-content-center align-items-center hidden ">
+              <div class="cart-container d-flex flex-column">
+                <header class="cart-header d-flex flex-row justify-content-between align-items-center">
+                  <button type="button" class="btn btn-default check-btn" data-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </header>
+                <main
+                  class="d-flex flex-column justify-content-center align-items-center cart-content cart-content-declined">
+                  <div class="cartImage">
+                    <img src="./Paylix Plugin Design/Assets/group-3-copy-3.png" alt="declined cart" />
+                  </div>
+                  <h1>Sorry, Payment Failed</h1>
+                  <p>Payment declined due to: Insufficient Funds</p>
+                </main>
               </div>
-              <h1>Sorry, Payment Failed</h1>
-              <p>Payment declined due to: Insufficient Funds</p>
-            </main>
-          </div>
-        </div>
-    <!-- finished fifth -->
+            </div>
+            <!-- finished fifth -->
 
           </div>
 
