@@ -107,15 +107,19 @@
 }
 .check-second-time-buttons {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    bottom: 10%;
-    padding: 0 5%;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* bottom: 10%; */
+    /* padding: 0 5%; */
 }
 .check-second-time-buttons > button {
-    color: #3e9ffc;
-    border-bottom: 1px solid #3e9ffc;
+    color: #1c89fa;
+    color: #3298fc;
+    /* border-bottom: 1px solid #1c89fa; */
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
     font-size: 0.9rem;
 }
 
@@ -128,8 +132,6 @@
 
 
 
-@media only screen and (max-width: 767px) {
-    .check-second-wrapper > h1 {
-        padding-top: 20%;
-    }
-}
+
+
+

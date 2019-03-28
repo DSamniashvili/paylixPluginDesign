@@ -31,10 +31,10 @@
     </div>
 
     <div class="modal fade" id="MainModal" tabindex="-1" role="dialog" aria-labelledby="MainModal" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content myModal-content desktop hidden-xs">
+      <div class="modal-dialog modal-dialog-centered myModal_dialog_centered">
+        <div class="modal-content myModal-content hidden-xs">
           <div class="modal-body myModal-body">
-            <div class="stick d-flex justify-content-center align-items-center" data-dismiss="modal">
+            <div class="visible-xs stick d-flex justify-content-center align-items-center" data-dismiss="modal">
               <button type="button" class="btn btn-default stick" data-dismiss="modal">
               </button>
             </div>
@@ -71,7 +71,7 @@
                     class="d-flex align-items-center justify-content-between myModal-main-second-num2">
                     <input type="number" name="number" placeholder="Your phone Number"
                       class="myModal-main-second-num2-input"><br>
-                    <button type="submit" value="Submit"
+                    <button type="button" value="Submit"
                       class="myModal-main-second-arrowRight d-flex justify-content-center aling-items-center position-relative"
                       onclick="addClassFunc()">
                       <img src="./Paylix Plugin Design/Assets/pathCopy.png" alt="arrow right"
@@ -117,10 +117,8 @@
                 </header>
                 <img src="./Paylix Plugin Design//Assets/group-3.png" alt="image" />
               </div>
-              <div class="d-flex flex-column justify-content-center align-items-center check-second">
-
-                <div
-                  class="mobile-header-wrappe visible-xs myModal-footer d-flex jlex-row justify-content-between align-items-center">
+              <div
+                  class="visible-xs myModal-footer d-flex jlex-row justify-content-between align-items-center mobile-header-wrapper ">
                   <div class="myModal-footer-PaylixLogo">
                     <img src="./Paylix Plugin Design//Assets/group-2-grey.png" alt="Paylix Logo" />
                   </div>
@@ -128,6 +126,9 @@
                     <h2>02:59</h2>
                   </div>
                 </div>
+              <div class="d-flex flex-column justify-content-center align-items-center check-second">
+
+                
 
                 <div class="d-flex flex-column align-items-center  check-second-wrapper">
                   <button class="check-second-checkmark hidden-xs" onclick="goToCart()">
@@ -140,8 +141,8 @@
                     <h2>02:59</h2>
                   </div>
                   <div class=" d-flex flex-row justify-content-between check-second-time-buttons">
-                    <button onClick="changeClass()">Send Again</button>
-                    <button>Cancel Request</button>
+                    <button onClick="changeClass()"><u>Send Again</u></button>
+                    <button><u>Cancel Request</u></button>
                   </div>
                 </div>
               </div>
@@ -151,8 +152,8 @@
             <!-- third -->
 
             <div class="nice-to-meet hidden d-flex flex-column justify-content-center align-items-center ">
-              <img src="./Paylix Plugin Design//Assets/bitmap-copy.png" />
-              <div class="nice-to-meet-container d-flex flex-column">
+              <!-- <img src="./Paylix Plugin Design//Assets/bitmap-copy.png" /> -->
+              <div class="nice-to-meet-container nice-to-meet-main-mobile d-flex flex-column">
                 <header
                   class="nice-to-meet-header d-flex flex-row justify-content-between align-items-center hidden-xs">
                   <!-- <div class="check-header-right-button-1"> -->
@@ -162,7 +163,7 @@
                   <!-- </ div> -->
                 </header>
                 <main class="nice-to-meet-main">
-                  <div class="nice-to-meet-main-mobile d-flex flex-column justify-content-center align-items-center visible-xs">
+                  <!-- <div class="nice-to-meet-main-mobile d-flex flex-column justify-content-center align-items-center visible-xs"> -->
                     <h1>Hi, Nice to Meet you!</h1>
                     <p class="first hidden-xs">Lorem Ipsum is simply dummy text of the printing and typesetting
                       industry.
@@ -176,17 +177,17 @@
                       Lorem
                       Ipsum has been the
                       industry's standard dummy text ever since the 1500s. </p>
-                  </div>
+                  <!-- </div> -->
                 </main>
                 <footer class="nice-to-meet-footer">
                   <div class="nice-header-left-image">
                     <img src="./Paylix Plugin Design/Assets/logo.png" alt="logo" />
                   </div>
                 </footer>
-                <div class="visible-xs mobile-bottom-grey d-flex justify-content-center align-items-center">
-                  <img src="./Paylix Plugin Design/Assets/app-store.png" alt="app store">
-                </div>
               </div>
+                  <div class="visible-xs mobile-bottom-grey d-flex justify-content-center align-items-center">
+                    <img src="./Paylix Plugin Design/Assets/app-store.png" alt="app store">
+                  </div>
             </div>
             <!-- finished third -->
 

@@ -66,17 +66,18 @@ function showDeclined() {
 }
 
 function changeOnMobile() {
-  let mobileV = document.querySelector('.desktop');
+  let mobileV = document.querySelector('.hidden-xs');
   if (viewportWidth > 767.98) {
-    mobileV.classList.add('desktop');
+    // mobileV.classList.add('desktop');
     mobileV.classList.add('hidden-xs');
-    mobileV.classList.remove('mobile');
+    // mobileV.classList.add('hidden-sm');
+    // mobileV.classList.remove('mobile');
     mobileV.classList.remove('visible-xs');
   } else {
     console.log('Small viewport');
-    mobileV.classList.add('mobile');
+    // mobileV.classList.add('mobile');
     mobileV.classList.add('visible-xs');
-    mobileV.classList.remove('desktop');
+    // mobileV.classList.remove('desktop');
     mobileV.classList.remove('hidden-xs');
 
     mobileV.classList.add('myModal-mobile-content');

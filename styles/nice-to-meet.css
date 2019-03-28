@@ -4,12 +4,14 @@
     background-color: #6c44f5;
     position: relative;
 
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    /* border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */
+    /* position: fixed;
+    bottom: 0; */
 }
 .nice-to-meet-container {
-    /* width: 94%; */
-    width: 100%;
+    width: 94%;
+    /* width: 100%; */
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -17,6 +19,9 @@
 
 .check-second {
     background-color: #fff;
+}
+.nice-to-meet {
+    background-image: url('../Paylix_Plugin_Design/Assets/bitmap-copy.png');
 }
 
 .nice-to-meet > img {
@@ -41,10 +46,7 @@
     font-family: 'Open Sans', sans-serif;
     padding: 0 3%;
 }
-.nice-to-meet-main-mobile {
-    padding: 25px 2%;
-    text-align: center;
-}
+
 
 .nice-to-meet-main > h1,
 .nice-to-meet-main-mobile > h1 {
@@ -74,5 +76,6 @@
     width: 100%;
 }
 .nice-header-left-image > img {
-    height: 3vh;
+    /* height: 3vh; */
+    height: 24px;
 }
